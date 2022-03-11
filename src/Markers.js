@@ -6,7 +6,7 @@ const Marker = ({ map, place }) => {
   const markerRef = useRef()
 
   useEffect(() => {
-    const marker = new mapboxgl.Marker({color: 'red', draggable: false})
+    const marker = new mapboxgl.Marker({color: 'blue', draggable: false})
       .setLngLat(place.location)
       .setPopup(new mapboxgl.Popup({offset: 30})
       .setHTML('<h4>' + "id: "+ place.id  + '<br>' 

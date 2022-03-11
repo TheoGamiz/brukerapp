@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Map />
-      <DataFetching/>
       <main>{children}</main>
     </>
   )
