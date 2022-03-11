@@ -7,15 +7,15 @@ function DataFetching(){
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        axios.get('https://api-adresse.data.gouv.fr/search/?q=BAGNOLS SUR CEZE CEDEX&limit=1', {mode: 'no-cors'})
-            .then(res => {
-                const locat = res.data.features[0].geometry.coordinates
-                console.log(locat)
+        // axios.get('https://api-adresse.data.gouv.fr/search/?q=BAGNOLS SUR CEZE CEDEX&limit=1', {mode: 'no-cors'})
+        //     .then(res => {
+        //         const locat = res.data.features[0].geometry.coordinates
+        //         console.log(locat)
                
-            })
-            .catch(err => {
-                console.log(err)
-            })
+        //     })
+        //     .catch(err => {
+        //         console.log(err)
+        //     })
     })
     return (
         <div>

@@ -7,7 +7,7 @@ import Markers from "./Markers"
 import "mapbox-gl/dist/mapbox-gl.css"
 import DataFetching from "./DataFetching"
 
-const MAPBOX_TOKEN = "pk.eyJ1IjoidGhlb2dteiIsImEiOiJja3QxYmxxMWswOHFwMnVuenB0ejd4ejV4In0.OMJCR5keicqg17VcYY3G8A"
+const MAPBOX_TOKEN = "pk.eyJ1IjoidGhlb2dteiIsImEiOiJjbDBtNjd2engwMDIyM2NvM3BpN3dobW9wIn0.YrYYwwyoml0_U7J9rieyjw"
 
 
 const places = [
