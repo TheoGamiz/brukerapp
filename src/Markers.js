@@ -6,14 +6,14 @@ const Marker = ({ map, place }) => {
   const markerRef = useRef()
 
   useEffect(() => {
-    const marker = new mapboxgl.Marker({color: 'blue', draggable: false})
+    const marker = new mapboxgl.Marker({color: 'green', draggable: false, scale: 0.5, backgroundImage: 'https://docs.mapbox.com/mapbox.js/assets/images/astronaut1.png'})
       .setLngLat(place.location)
       .setPopup(new mapboxgl.Popup({offset: 30})
       .setHTML('<h4>' + "id: "+ place.id  + '<br>' 
       +"Serialno: " + place.Serialno + '<br>' 
       + "Model: "+ place.Model + '<br>' 
       + "Company: "+ place.Company + '<br>' 
-      + "Country: FR"+ place.Country + '<br>' 
+      + "Country: "+ place.Country + '<br>' 
       + "City: "+ place.city +'</h4>')
       )
       .addTo(map)

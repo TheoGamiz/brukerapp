@@ -5,14 +5,29 @@ import Map from "./Map"
 import DataFetching from "./DataFetching"
 
 const Layout = ({ children }) => {
+
+  localStorage.setItem("ePlaces",localStorage.getItem("markerss8tiger"))
+
+  const handleClick = () => {
+    //places = S8_Tiger
+    var exportPlaces = localStorage.getItem("markerss8tiger")
+    localStorage.setItem("ePlaces",exportPlaces)
+    console.log(localStorage.getItem("ePlaces"))
+  }
+
+  console.log("hello" + localStorage.getItem("ePlaces"))
+
   return (
-    <>
-      <Map />
+    <div className="home">   
+      <h5>Hello</h5>
+      <Map>
+      </Map>
+      
       <main>{children}</main>
-    </>
+    </div>
   )
 }
-
+//<button onClick={handleClick}>Click me</button>
 
 export default Layout
 
