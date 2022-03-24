@@ -2,6 +2,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Map from "./Map"
+import ToggleGroup from "./Buttons"
+
 import DataFetching from "./DataFetching"
 
 const Layout = ({ children }) => {
@@ -19,9 +21,13 @@ const Layout = ({ children }) => {
 
   return (
     <div className="home">   
-      <h5>Hello</h5>
-      <Map>
+      <Map style={{zIndex: '1'}}>
+        
       </Map>
+
+      <ToggleGroup style={{zIndex: '4'}}>
+
+      </ToggleGroup>
       
       <main>{children}</main>
     </div>

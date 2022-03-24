@@ -6,10 +6,14 @@ import { multiPoint } from "@turf/helpers"
 import Markers from "./Markers"
 import "mapbox-gl/dist/mapbox-gl.css"
 import DataFetching from "./DataFetching"
+import styled from "styled-components"
+
+
 
 const MAPBOX_TOKEN = "pk.eyJ1IjoidGhlb2dteiIsImEiOiJjbDBtNjd2engwMDIyM2NvM3BpN3dobW9wIn0.YrYYwwyoml0_U7J9rieyjw"
 
 
+//France
 const S8_Tiger = [
     
       {
@@ -744,7 +748,6 @@ const S8_Tiger = [
       }
     
 ]
-
 const SCD = [
   
   {
@@ -1714,8 +1717,6 @@ const SCD = [
     Region: "Essonne"
   }
  ]
-
-
 const XRD = [
   
   {
@@ -6409,7 +6410,6 @@ const XRD = [
     Region: "Territ.-de-Belfort"
   }
  ] 
-
 const XRF = [
   
   {
@@ -9005,7 +9005,1295 @@ const XRF = [
  ]
 
 
-var places = XRF
+ //Belgique
+
+const S8_Tiger_BE = [
+  {
+    id: "12377911",
+    Serialno: "210124",
+    Model: "S8 TIGER",
+    Company: "AGC GLASS EUROPE SA Technovation Centre",
+    Contact: "",
+    city: "GOSSELIES",
+    location: [ 4.431379928016773, 50.46884112839178,],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10021394",
+    Serialno: "205463",
+    Model: "S8 TIGER",
+    Company: "Bayer Agriculture BV",
+    Contact: "",
+    city: "ANTWERPEN 4",
+    location: [4.387377031907312, 51.232940647144396],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12880624",
+    Serialno: "215680",
+    Model: "S8 TIGER",
+    Company: "CARMEUSE SA Services Centraux",
+    Contact: "lLaetitia MASTRANTUONO",
+    city: "SEILLES",
+    location: [ 5.092257863857428, 50.50048619750512,],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10025396",
+    Serialno: "206383",
+    Model: "S8 TIGER",
+    Company: "CARMEUSE SA Services Centraux",
+    Contact: "",
+    city: "SEILLES",
+    location: [5.092257863857428, 50.50048619750512,],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10021509",
+    Serialno: "205481",
+    Model: "S8 TIGER",
+    Company: "Centre Terre et Pierre asbl",
+    Contact: "",
+    city: "TOURNAI",
+    location: [3.399510236449385, 50.616621316320085],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12762997",
+    Serialno: "214836",
+    Model: "S8 TIGER",
+    Company: "Comet Traitements",
+    Contact: "Eliane LECUT",
+    city: "CHATELET",
+    location: [4.522776375105133, 50.4051975447613],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "13064673",
+    Serialno: "216785",
+    Model: "S8 TIGER",
+    Company: "Desotec N.V.",
+    Contact: "Lieselot Vandamme",
+    city: "ROESELARE",
+    location: [3.127416451745706, 50.9430581299503],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10027734",
+    Serialno: "206863",
+    Model: "S8 TIGER",
+    Company: "DESOTEC NV DESOTEC PRODUCTIE",
+    Contact: "",
+    city: "ROESLARE",
+    location: [3.127416451745706, 50.9430581299503],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12317103",
+    Serialno: "209640",
+    Model: "S8 TIGER",
+    Company: "DuPont de Nemours (Belgium) B.V.",
+    Contact: "Isabelle De Meirsman",
+    city: "MECHELEN",
+    location: [4.439991081412938, 51.02848875221397],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "11761732",
+    Serialno: "207036",
+    Model: "S8 TIGER",
+    Company: "ETEX SERVICES NV",
+    Contact: "",
+    city: "KAPELLE-OP-DEN-BOS",
+    location: [4.343430229786414, 51.00473500569274 ],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "11791285",
+    Serialno: "207231",
+    Model: "S8 TIGER",
+    Company: "EXXON MOBIL CHEMICAL EUROPE INC. PO885 EMC EUROPE, BRUSSELS - STORES",
+    Contact: "",
+    city: "MACHELEN",
+    location: [4.439991081412938, 51.02848875221397],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12539472",
+    Serialno: "212718",
+    Model: "S8 TIGER",
+    Company: "Fuchs Lubricants Benelux NV/SA",
+    Contact: "Kevin Martens",
+    city: "BEERSEL - HUIZINGEN",
+    location: [4.273861632202064, 50.747410912199406],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10019317",
+    Serialno: "205010",
+    Model: "S8 TIGER",
+    Company: "HOLCIM BELGIQUE SA Usine d'Obourg",
+    Contact: "",
+    city: "OBOURG",
+    location: [4.008049587132281, 50.47432235883055 ],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10022557",
+    Serialno: "205757",
+    Model: "S8 TIGER",
+    Company: "HOLCIM BELGIQUE SA Usine d'Obourg",
+    Contact: "",
+    city: "OBOURG",
+    location: [4.008049587132281, 50.47432235883055 ],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12459489",
+    Serialno: "210947",
+    Model: "S8 TIGER",
+    Company: "HYDROMETAL SA",
+    Contact: "",
+    city: "ENGIS",
+    location: [5.403177606506415, 50.57980505750585],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12317778",
+    Serialno: "209641",
+    Model: "S8 TIGER",
+    Company: "INDUSTEEL BELGIUM ArcelorMittal group",
+    Contact: "",
+    city: "MARCHIENNE AU PONT",
+    location: [4.396066793392251, 50.40593160101479],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10021800",
+    Serialno: "205571",
+    Model: "S8 TIGER",
+    Company: "INEOS Aromatics Laboratorium",
+    Contact: "R. Nijs",
+    city: "GEEL",
+    location: [ 4.95747084476229, 51.1814151630912],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12307842",
+    Serialno: "209578",
+    Model: "S8 TIGER",
+    Company: "INEOS SERVICE BELGIUM SA LABO U01120",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [4.350352711384619, 50.8672385719297],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10022504",
+    Serialno: "205529",
+    Model: "S8 TIGER",
+    Company: "INST. NATIONAL DES SILICATES ASBL",
+    Contact: "",
+    city: "MONS",
+    location: [ 3.9482023746764936, 50.46344792276416,],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12467162",
+    Serialno: "211029",
+    Model: "S8 TIGER",
+    Company: "Katholieke Universiteit Leuven Center for Surface",
+    Contact: "Dries Smeets",
+    city: "LEUVEN",
+    location: [4.702962213122381, 50.87567226405009],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12425724",
+    Serialno: "210523",
+    Model: "S8 TIGER",
+    Company: "Kronos Europe S.A./N.V",
+    Contact: "",
+    city: "GENT",
+    location: [ 3.6869281711648285, 51.06169670261434],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "13050318",
+    Serialno: "210207",
+    Model: "S8 TIGER",
+    Company: "LABORELEC CVBA Engie",
+    Contact: "Glynis DECLERC",
+    city: "LINKEBEEK",
+    location: [4.3421806751063485, 50.767211328499506,],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12417995",
+    Serialno: "210442",
+    Model: "S8 TIGER",
+    Company: "Nivelles B�ton SA",
+    Contact: "",
+    city: "NIVELLES",
+    location: [4.314810134501313, 50.60811765138751 ],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12572842",
+    Serialno: "213099",
+    Model: "S8 TIGER",
+    Company: "NV Cemminerals BV",
+    Contact: "Dirk De Leus",
+    city: "KLUIZENDOK GENT",
+    location: [3.777804762556331, 51.163490173570814],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10024780",
+    Serialno: "206278",
+    Model: "S8 TIGER",
+    Company: "NV INTERTEK BELGIUM",
+    Contact: "",
+    city: "ANTWERPEN 4",
+    location: [4.41484293527403, 51.21361514445606],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "11938403",
+    Serialno: "207519",
+    Model: "S8 TIGER",
+    Company: "NV PROMAT RESEARCH & TECHNOLOGY CENTRE",
+    Contact: "",
+    city: "WILLEBROEK - TISSELT",
+    location: [4.355667834004198, 51.03474694632079],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12284511",
+    Serialno: "209394",
+    Model: "S8 TIGER",
+    Company: "OCAS Zelzate",
+    Contact: "Myriam Madani",
+    city: "ZELZATE",
+    location: [3.807715861313165, 51.19898201085204],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10024318",
+    Serialno: "206158",
+    Model: "S8 TIGER",
+    Company: "PRINCE MINERALS SRL",
+    Contact: "",
+    city: "SAINT-GHISLAIN",
+    location: [ 3.799276940248719, 50.482599741245764],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12781911",
+    Serialno: "215046",
+    Model: "S8 TIGER",
+    Company: "Shell Catalysts & Technologies Belgium B.V.",
+    Contact: "Wieme Joris",
+    city: "GENT",
+    location: [3.702195111204958, 51.075504087831945],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10011647",
+    Serialno: "203773",
+    Model: "S8 TIGER",
+    Company: "SPRL XRF SCIENTIFIC EUROPE",
+    Contact: "Arnd Buehler",
+    city: "BRUXELLES",
+    location: [4.366488880090061, 50.86268811897263],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12975923",
+    Serialno: "216126",
+    Model: "S8 TIGER",
+    Company: "Total Research & Technology Feluy",
+    Contact: "",
+    city: "SENEFFE-FELUY",
+    location: [ 4.248720018413096, 50.562506047955566],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12296621",
+    Serialno: "209454",
+    Model: "S8 TIGER",
+    Company: "TotalEnergies Petrochemicals F�luy Comptabilit� Facturation",
+    Contact: "",
+    city: "SENEFFE-FELUY",
+    location: [ 4.248720018413096, 50.562506047955566],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12411552",
+    Serialno: "210338",
+    Model: "S8 TIGER",
+    Company: "Universite de Liege GeMMe",
+    Contact: "",
+    city: "LIEGE",
+    location: [5.59275278131174, 50.638953349052656],
+    Country: "BE",
+    Region: "Liege"
+  },
+  {
+    id: "13016222",
+    Serialno: "216364",
+    Model: "S8 TIGER",
+    Company: "VESUVIUS GROUP SA",
+    Contact: "Julien BERTON",
+    city: "GHLIN",
+    location: [ 3.8794608569131195, 50.468045666404414],
+    Country: "BE",
+    Region: ""
+  }
+ ]
+
+const D4_BE = [
+  {
+    id: "CA10006794",
+    Serialno: "202379",
+    Model: "D4 ENDEAVOR",
+    Company: "HOLCIM (BELGIQUE) SA Service Comptabilit� Fournisseurs",
+    Contact: "",
+    city: "NIVELLES",
+    location: [4.325109816653723, 50.60811765138751],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12187332",
+    Serialno: "208659",
+    Model: "D4 ENDEAVOR",
+    Company: "HOLCIM BELGIQUE SA Usine d'Obourg",
+    Contact: "",
+    city: "OBOURG",
+    location: [4.007877925763074, 50.474923226780156, ],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10010536",
+    Serialno: "203511",
+    Model: "D4 ENDEAVOR",
+    Company: "Kronos Europe S.A./N.V",
+    Contact: "",
+    city: "GENT",
+    location: [3.6994485292976482, 51.054791465317564],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002879",
+    Serialno: "D4-01/08-10",
+    Model: "D4 ENDEAVOR",
+    Company: "SA Cimenteries CBR S.A.",
+    Contact: "J.P. Paques",
+    city: "LIXHE",
+    location: [5.678772271388323, 50.75704001112535],
+    Country: "BE",
+    Region: ""
+  }
+ ]
+
+ const D2_Phaser_BE = [
+  {
+    id: "12803375",
+    Serialno: "215186",
+    Model: "D2 PHASER",
+    Company: "Ajinomoto Omnichem S.A/N.V.",
+    Contact: "Jurgen Velter",
+    city: "WETTEREN",
+    location: [ 3.8695623322690467, 50.988803071767265],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12554673",
+    Serialno: "212895",
+    Model: "D2 PHASER",
+    Company: "CERTECH ZONE INDUSTRIELLE C",
+    Contact: "Olivia Deresteau",
+    city: "SENEFFE",
+    location: [4.2479302739415825, 50.55393886996207, ],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12549738",
+    Serialno: "212812",
+    Model: "D2 PHASER",
+    Company: "DEQUENNE CHIMIE SA",
+    Contact: "Christelle HIVRE",
+    city: "GHLIN",
+    location: [3.892163798234425, 50.46946607599118],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10024329",
+    Serialno: "205690",
+    Model: "D2 PHASER",
+    Company: "Etex Building Performance NV",
+    Contact: "",
+    city: "WILLEBROEK - TISSELT",
+    location: [ 4.353479151546811, 51.03504380533736,],
+    Country: "BE",
+    Region: "Antwerp"
+  },
+  {
+    id: "CA10027459",
+    Serialno: "206694",
+    Model: "D2 PHASER",
+    Company: "Katholieke Universiteit Leuven Department Materiaalkunde",
+    Contact: "Louis Depre",
+    city: "LEUVEN",
+    location: [4.697469049307762, 50.87372247713225],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12468705",
+    Serialno: "211053",
+    Model: "D2 PHASER",
+    Company: "Katholieke Universiteit Leuven Dept Chemie",
+    Contact: "",
+    city: "LEUVEN",
+    location: [4.697469049307762, 50.87372247713225],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12739258",
+    Serialno: "250122",
+    Model: "D2 PHASER",
+    Company: "Kronos Europe S.A./N.V",
+    Contact: "Glenn Bobelijn",
+    city: "GENT",
+    location: [3.6850289742842746, 51.058244212695506],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12653454",
+    Serialno: "250004",
+    Model: "D2 PHASER",
+    Company: "SIL'INNOV SRL",
+    Contact: "Nicolas MANNU",
+    city: "COURCELLES",
+    location: [ 4.333936262376601, 50.47428391218454,],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12663260",
+    Serialno: "214109",
+    Model: "D2 PHASER",
+    Company: "SPRL ORBIX Solutions",
+    Contact: "Dr. Ghania Ounoughene",
+    city: "FARCIENNES",
+    location: [4.544161915229981, 50.43230474006385],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10026824",
+    Serialno: "206573",
+    Model: "D2 PHASER",
+    Company: "VESUVIUS GROUP SA",
+    Contact: "",
+    city: "GHLIN",
+    location: [ 3.894910380141734, 50.470558669714855],
+    Country: "BE",
+    Region: ""
+  }
+ ]
+///
+ const D8_BE = [
+ 
+  {
+    id: "CA10006879",
+    Serialno: "202519",
+    Model: "D8",
+    Company: "Centre de Recherches M�tallur- giques",
+    Contact: "",
+    city: "LIEGE",
+    location: [ 5.619531954908005, 50.62719407986047],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002436",
+    Serialno: "D8-01/11-374",
+    Model: "D8",
+    Company: "CSTC-WTCB Lab. Miscroscopy/Geological Techniq",
+    Contact: "",
+    city: "LIMELETTE",
+    location: [ 4.5643695031275895, 50.67073890358881],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10003177",
+    Serialno: "D8-02/07-211",
+    Model: "D8",
+    Company: "INSTITUT NATIONAL DES SILICATES",
+    Contact: "",
+    city: "MONS",
+    location: [ 3.9626219296898677, 50.43808943381786],
+    Country: "BE",
+    Region: ""
+  },
+  
+  {
+    id: "CA10002587",
+    Serialno: "D8-01/10-373",
+    Model: "D8",
+    Company: "Magotteaux International SA",
+    Contact: "",
+    city: "VAUX-SOUS-CHEVREMONT",
+    location: [ 5.627931159264592, 50.60148564509135],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002056",
+    Serialno: "D8-00/10-231",
+    Model: "D8",
+    Company: "UCL-CEAN Facult� des Sciences",
+    Contact: "",
+    city: "LOUVAIN-LA-NEUVE",
+    location: [4.607712497930598, 50.668651324012],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002561",
+    Serialno: "D8-02/02-409",
+    Model: "D8",
+    Company: "ULB Chimie des Pol�m�res",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [ 4.375758594027229, 50.860087660725284],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002414",
+    Serialno: "D8-01/06-327",
+    Model: "D8",
+    Company: "UNIVERSITE CATHOLIQUE DE LOUVAIN UCL/SST/ELI/ELIE/SOLS",
+    Contact: "",
+    city: "OTTIGNIES-LOUVAIN-LA-NEUV",
+    location: [ 4.569647715999586, 50.664035389650294],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002367",
+    Serialno: "D8-01/09-354",
+    Model: "D8",
+    Company: "Universit� de Li�ge Institut de Chimie",
+    Contact: "",
+    city: "LIEGE",
+    location: [ 5.619531954908005, 50.62719407986057],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10011023",
+    Serialno: "203619",
+    Model: "D8 ADVANCE",
+    Company: "AGC Glass Europe S.A. CRD PLANT",
+    Contact: "",
+    city: "GOSSELIES",
+    location: [4.423655166402466, 50.46960595675821],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10011009",
+    Serialno: "203618",
+    Model: "D8 ADVANCE",
+    Company: "CRIC",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [ 4.375758594027229, 50.860087660725294],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10006672",
+    Serialno: "202446",
+    Model: "D8 ADVANCE",
+    Company: "ETEX SERVICES NV",
+    Contact: "",
+    city: "KAPELLE-OP-DEN-BOS",
+    location: [ 4.34583348895531, 51.00559914946433],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10012059",
+    Serialno: "203893",
+    Model: "D8 ADVANCE",
+    Company: "Holcim Belgique (SA) Usine d'Obourg",
+    Contact: "",
+    city: "OBOURG",
+    location: [ 4.001097301679405, 50.47434967117585],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10011071",
+    Serialno: "203641",
+    Model: "D8 ADVANCE",
+    Company: "Institut Royal du Patrimoine Artist",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [ 4.295764395976846, 50.85466957355773],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10007183",
+    Serialno: "202611",
+    Model: "D8 ADVANCE",
+    Company: "Laborelec cvba/scri Magazijn",
+    Contact: "",
+    city: "LINKEBEEK",
+    location: [ 4.3462147172827095, 50.770576912416495],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10017480",
+    Serialno: "204569",
+    Model: "D8 ADVANCE",
+    Company: "Lhoist Recherche et D�veloppement S Centre de Recherches de Nivelles",
+    Contact: "",
+    city: "NIVELLES",
+    location: [4.314810134501313, 50.60811765138751 ],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10007699",
+    Serialno: "202867",
+    Model: "D8 ADVANCE",
+    Company: "NV PROMAT RESEARCH & TECHNOLOGY CENTRE",
+    Contact: "",
+    city: "WILLEBROEK - TISSELT",
+    location: [4.361547235899533, 51.03501681823263, ],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10011567",
+    Serialno: "203741",
+    Model: "D8 ADVANCE",
+    Company: "SCR - SIBELCO",
+    Contact: "",
+    city: "DESSEL",
+    location: [ 5.120788048261072, 51.25094978832979],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10011673",
+    Serialno: "203780",
+    Model: "D8 ADVANCE",
+    Company: "UCB PHARMA SA B�timent S4",
+    Contact: "",
+    city: "BRAINE-L'ALLEUD",
+    location: [4.350368678701321, 50.69449726587371],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10017579",
+    Serialno: "202254",
+    Model: "D8 ADVANCE",
+    Company: "UCB PHARMA SA B�timent S4",
+    Contact: "",
+    city: "BRAINE-L'ALLEUD",
+    location: [4.350368678701321, 50.69449726587364],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10017039",
+    Serialno: "204474",
+    Model: "D8 ADVANCE",
+    Company: "Universite catholique de Louvain Centre de Diffraction-X",
+    Contact: "",
+    city: "LOUVAIN-LA-NEUVE",
+    location: [4.605952968896228, 50.66892332246224],
+    Country: "BE",
+    Region: ""
+  },
+  
+  
+  {
+    id: "CA10017267",
+    Serialno: "204537",
+    Model: "D8 ADVANCE",
+    Company: "Universit� de Liege",
+    Contact: "",
+    city: "GEMBLOUX",
+    location: [ 4.685600587181442, 50.55141127637287],
+    Country: "BE",
+    Region: ""
+  },
+  
+  {
+    id: "CA10020453",
+    Serialno: "205254",
+    Model: "D8 ADVANCE A25",
+    Company: "C.T.P. a.s.b.l. Entr�e fournisseur",
+    Contact: "",
+    city: "TOURNAI",
+    location: [3.3850906814360116, 50.633174277101105],
+    Country: "BE",
+    Region: ""
+  },
+
+  {
+    id: "12469210",
+    Serialno: "211056",
+    Model: "D8 ADVANCE A25",
+    Company: "Qmineral BVBA",
+    Contact: "",
+    city: "HEVERLEE",
+    location: [ 4.6928851903334525, 50.86132863163936],
+    Country: "BE",
+    Region: ""
+  },
+  
+ 
+  {
+    id: "12249340",
+    Serialno: "209124",
+    Model: "D8 ADVANCE A25",
+    Company: "Universit� de Li�ge Institut de Chimie, B�t. B6",
+    Contact: "",
+    city: "LIEGE",
+    location: [ 5.623651827768969, 50.641566120510056],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12026755",
+    Serialno: "207938",
+    Model: "D8 ADVANCE A25 ECO",
+    Company: "NGK Ceramics Europe S.A.",
+    Contact: "",
+    city: "BAUDOUR",
+    location: [ 3.844005510670618, 50.48540463380835],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12358248",
+    Serialno: "209963",
+    Model: "D8 ADVANCE A25 ECO",
+    Company: "ULB",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [ 4.295764395976846, 50.85466957355773],
+    Country: "BE",
+    Region: ""
+  },
+  
+  {
+    id: "12160388",
+    Serialno: "208517",
+    Model: "D8 ADVANCE A25 ECO",
+    Company: "Universit� de Li�ge Administration des Ressources Finan",
+    Contact: "",
+    city: "LIEGE",
+    location: [5.6106055637092505, 50.636122682718266],
+    Country: "BE",
+    Region: ""
+  },
+ 
+  
+  {
+    id: "CA10007563",
+    Serialno: "202800",
+    Model: "D8 DISCOVER-MR",
+    Company: "Centre de Recherches M�tallur- giques",
+    Contact: "Alain Schmitz",
+    city: "LIEGE",
+    location: [5.6106055637092505, 50.636122682718266],
+    Country: "BE",
+    Region: ""
+  },
+ 
+ 
+
+  {
+    id: "CA10006827",
+    Serialno: "202506",
+    Model: "D8 DISCOVER-MR",
+    Company: "Universit� de Li�ge Institut de Chimie, B�t. B6",
+    Contact: "",
+    city: "LI�GE",
+    location: [5.6106055637092505, 50.636122682718266],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12023212",
+    Serialno: "207930",
+    Model: "D8 DISCOVER-MR A25",
+    Company: "ExxonMobil Chemical Europe Inc",
+    Contact: "",
+    city: "MACHELEN (DIEGEM)",
+    location: [ 4.45336559557566, 50.90262074123188],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10021501",
+    Serialno: "205477",
+    Model: "D8 DISCOVER-MR A25",
+    Company: "TOTAL RESEARCH & TECHNOLOGY FELUY SA",
+    Contact: "",
+    city: "SENEFFE-FELUY",
+    location: [4.2482908649900795, 50.563242099282974 ],
+    Country: "BE",
+    Region: ""
+  },
+  
+  {
+    id: "11970959",
+    Serialno: "207689",
+    Model: "D8 DISCOVER-MR A25 SSS",
+    Company: "Magotteaux International SA",
+    Contact: "",
+    city: "VAUX-SOUS-CHEVREMONT",
+    location: [ 5.627373259814669, 50.60031436133924],
+    Country: "BE",
+    Region: ""
+  },
+  
+  {
+    id: "CA10022475",
+    Serialno: "205732",
+    Model: "D8 FOCUS",
+    Company: "Administration centrale du SPF Empl Travail et Concertation Sociale",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [ 4.295764395976846, 50.85466957355773],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10011021",
+    Serialno: "97-416",
+    Model: "D8-GADDS",
+    Company: "ULB - BRUEGEL GEOCHIMIE Magasins G�n�raux",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [ 4.295764395976846, 50.85466957355773],
+    Country: "BE",
+    Region: ""
+  }
+ ]
+
+ const S2_BE = [
+ 
+  
+ 
+ 
+  {
+    id: "12760289",
+    Serialno: "214830",
+    Model: "S2 PUMA",
+    Company: "CALCAIRES DE FLORENNES SA",
+    Contact: "Jean-Michel CHALTIN",
+    city: "FLORENNES",
+    location: [ 4.58172902601977, 50.250804992486515,],
+    Country: "BE",
+    Region: ""
+  },
+  
+ 
+  {
+    id: "12039490",
+    Serialno: "208010",
+    Model: "S2 RANGER",
+    Company: "Carmeuse S.A. � Moha (B)",
+    Contact: "",
+    city: "MOHA",
+    location: [ 5.184277780324782, 50.54771824179859],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10027894",
+    Serialno: "206909",
+    Model: "S2 RANGER",
+    Company: "CARMEUSE SA - ENGIS",
+    Contact: "",
+    city: "ENGIS",
+    location: [ 5.384638178632078, 50.5589804126242],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "12239629",
+    Serialno: "209066",
+    Model: "S2 RANGER",
+    Company: "E. VICTOR MEYER SA",
+    Contact: "",
+    city: "MALMEDY",
+    location: [6.023094359980672, 50.4074701912842],
+    Country: "BE",
+    Region: ""
+  },
+  
+  {
+    id: "CA10021919",
+    Serialno: "205480",
+    Model: "S2 RANGER",
+    Company: "Lhoist Industrie S.A. Usine de On-Jemeile",
+    Contact: "",
+    city: "MARCHE-EN-FAMENNE",
+    location: [ 5.313403248543044, 50.21789457102391],
+    Country: "BE",
+    Region: ""
+  },
+  
+ ]
+
+ const S4_Explorer_BE = [
+  {
+    id: "CA10002933",
+    Serialno: "S4-00/10-091",
+    Model: "S4 EXPLORER",
+    Company: "AGC Flat Glass Europe N.V.",
+    Contact: "",
+    city: "MOL",
+    location: [5.1037048823854265, 51.24575665029996],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002826",
+    Serialno: "S4-EX-02/04-198",
+    Model: "S4 EXPLORER",
+    Company: "Bayer Agriculture BV",
+    Contact: "",
+    city: "ANTWERPEN 4",
+    location: [4.313133498901012, 51.280587735089725 ],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002553",
+    Serialno: "S4EX-02/01-175",
+    Model: "S4 EXPLORER",
+    Company: "BFB Oil Research S.A.",
+    Contact: "Francois van Dievoet",
+    city: "ISNES",
+    location: [4.726982510437425, 50.506333943210194],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10006231",
+    Serialno: "S4-ATOFINA",
+    Model: "S4 EXPLORER",
+    Company: "Bruker Belgium S.A./N.V.",
+    Contact: "",
+    city: "KONTICH",
+    location: [ 4.437177258333375, 51.13553292852792],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10006432",
+    Serialno: "S$-ATOFINA",
+    Model: "S4 EXPLORER",
+    Company: "Bruker Belgium S.A./N.V.",
+    Contact: "",
+    city: "KONTICH",
+    location: [ 4.437177258333375, 51.13553292852799],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10008991",
+    Serialno: "203199",
+    Model: "S4 EXPLORER",
+    Company: "Deceuninck Compound NV",
+    Contact: "",
+    city: "DIKSMUIDE",
+    location: [ 4.441943829901315, 51.19641404503466],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002404",
+    Serialno: "S4-EX-01/10-154",
+    Model: "S4 EXPLORER",
+    Company: "INEOS SERVICE BELGIUM SA LABO U01120",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [ 4.295764395976846, 50.85466957355773],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002552",
+    Serialno: "S4EX-01/12-176",
+    Model: "S4 EXPLORER",
+    Company: "ITS Caleb Brett Belgium NV",
+    Contact: "",
+    city: "ANTWERPEN 4",
+    location: [ 4.321373244622939, 51.27414475945989],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10003162",
+    Serialno: "S4EX-02/11-225",
+    Model: "S4 EXPLORER",
+    Company: "Kronos Europe S.A./N.V",
+    Contact: "",
+    city: "GENT",
+    location: [3.720734539079295, 51.07766111970065],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002045",
+    Serialno: "S4-00/05-60",
+    Model: "S4 EXPLORER",
+    Company: "Ministerie van Economische Zaken Bestuur Kwaliteit en Veiligheld",
+    Contact: "",
+    city: "BRUSSEL",
+    location: [ 4.363055652705924, 50.85640342994036],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10002657",
+    Serialno: "S4EX-01/11-165",
+    Model: "S4 EXPLORER",
+    Company: "SGS Depauw & Stokoe N.V. Laboratory Services",
+    Contact: "",
+    city: "ANTWERPEN",
+    location: [ 4.321373244622939, 51.27414475945985],
+    Country: "BE",
+    Region: ""
+  },
+ 
+
+  {
+    id: "CA10003061",
+    Serialno: "S4EX-02/08-214",
+    Model: "S4 EXPLORER",
+    Company: "Total Research & Technology Feluy",
+    Contact: "",
+    city: "FELUY",
+    location: [4.242557690261258, 50.56367657194632],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10005893",
+    Serialno: "202087",
+    Model: "S4 EXPLORER",
+    Company: "Total Research & Technology Feluy",
+    Contact: "",
+    city: "FELUY",
+    location: [4.242557690261258, 50.56367657194635],
+    Country: "BE",
+    Region: ""
+  },
+  
+ ]
+
+const S4_Pioneer_BE = [
+ 
+  {
+    id: "CA10016111",
+    Serialno: "204265",
+    Model: "S4 PIONEER",
+    Company: "AGC GLASS EUROPE SA Technovation Centre",
+    Contact: "",
+    city: "GOSSELIES",
+    location: [4.423655166402466, 50.46960595675831],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10006094",
+    Serialno: "202098",
+    Model: "S4 PIONEER",
+    Company: "CIMENTERIES CBR SA",
+    Contact: "",
+    city: "ANTOING",
+    location: [ 3.4698486900824914, 50.55432468094829],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10015729",
+    Serialno: "204162",
+    Model: "S4 PIONEER",
+    Company: "CSTC-WTCB Lab. Miscroscopy/Geological Techniq",
+    Contact: "",
+    city: "LIMELETTE",
+    location: [4.563210788885444, 50.671146882531154],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10006527",
+    Serialno: "202378",
+    Model: "S4 PIONEER",
+    Company: "Holcim Belgique (SA) Usine d'Obourg",
+    Contact: "",
+    city: "OBOURG",
+    location: [ 4.001097301679405, 50.47434967117575],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10006763",
+    Serialno: "202422",
+    Model: "S4 PIONEER",
+    Company: "HYDROMETAL",
+    Contact: "Sabine Lamotte",
+    city: "ENGIS",
+    location: [5.408499108951827, 50.57228308021832],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10006426",
+    Serialno: "202271",
+    Model: "S4 PIONEER",
+    Company: "INEOS Manufacturing Belgium NV",
+    Contact: "UYTTERHOEVEN",
+    city: "ANTWERPEN",
+    location: [ 4.3282396993912124, 51.246214755759674],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10007058",
+    Serialno: "202571",
+    Model: "S4 PIONEER",
+    Company: "Laborelec cvba/scri Magazijn",
+    Contact: "",
+    city: "LINKEBEEK",
+    location: [50.77008837493533, 4.350677912882087],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10007931",
+    Serialno: "202975",
+    Model: "S4 PIONEER",
+    Company: "SAMCOAT SA Surfaces and Advanced",
+    Contact: "Bernard COLINET",
+    city: "LIEGE",
+    location: [5.6106055637092505, 50.636122682718266],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10012590",
+    Serialno: "204032",
+    Model: "S4 PIONEER",
+    Company: "SPF Emploi Travail Concertation So Direction G�n�rale du Controle du",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [4.3815950805802615, 50.85748705744555],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10010659",
+    Serialno: "203537",
+    Model: "S4 PIONEER",
+    Company: "ULB Chimie des Pol�m�res",
+    Contact: "",
+    city: "BRUXELLES",
+    location: [4.3815950805802615, 50.8574870574458],
+    Country: "BE",
+    Region: ""
+  },
+  {
+    id: "CA10003062",
+    Serialno: "S4PI-02/09-41",
+    Model: "S4 PIONEER",
+    Company: "Vynova Belgium NV 2F QC/Milieu Lab",
+    Contact: "",
+    city: "TESSENDERLO",
+    location: [ 5.0555595271881755, 51.06425026648485,],
+    Country: "BE",
+    Region: ""
+  }
+ ]
+
+const S8_Lion_BE = [
+ 
+  {
+    id: "12434507",
+    Serialno: "210641",
+    Model: "S8-LION",
+    Company: "SA Cimenteries CBR S.A.",
+    Contact: "",
+    city: "LIXHE",
+    location: [ 5.678428948649909 ,50.75717575434258],
+    Country: "BE",
+    Region: ""
+  }
+ ]
+
+var places = D8_BE
+
 
 //places = localStorage.getItem("markersXRD")
 
@@ -9016,8 +10304,9 @@ var places = XRF
 
 
 const mapContainerStyle = {
-  width: "100%",
-  height: "100vh",
+  width: "200vh",
+  height: "100vw",
+  zIndex: "1",
 }
 
 const Map = () => {
@@ -9081,11 +10370,14 @@ const Map = () => {
   return (
     
     <div ref={mapContainerRef} style={mapContainerStyle}>
+       
+      
       
 
       {places && map && <Markers map={map} places={places} />}
 
-      <button> OK </button>
+      
+      
     </div>
   )
 
